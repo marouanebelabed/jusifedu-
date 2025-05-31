@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustifEdu - Tableau de Bord Admin</title>
+    <link rel="stylesheet" href="p9.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="user-info">
+            <div class="avatar">👨‍💼</div>
+            <div>
+                <h2>Admin Université</h2>
+                <p>Service des Affaires Académiques</p>
+            </div>
+        </div>
+        <nav class="dashboard-nav">
+            <a href="#" class="active">Tableau de bord</a>
+            <a href="#">Gestion des utilisateurs</a>
+            <a href="#">Rapports</a>
+            <a href="#" class="logout">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="stats-cards">
+            <div class="stat-card">
+                <h3>Total des justifications</h3>
+                <p class="stat-value">142</p>
+            </div>
+            <div class="stat-card">
+                <h3>Acceptées</h3>
+                <p class="stat-value">112 (79%)</p>
+            </div>
+            <div class="stat-card">
+                <h3>Refusées</h3>
+                <p class="stat-value">20 (14%)</p>
+            </div>
+            <div class="stat-card">
+                <h3>En attente</h3>
+                <p class="stat-value">10 (7%)</p>
+            </div>
+        </div>
+
+        <div class="admin-actions">
+            <a href="gestion-utilisateurs.html" class="action-card">
+                <h3>Gérer les utilisateurs</h3>
+                <p>Ajouter/modifier étudiants et enseignants</p>
+            </a>
+            <a href="rapports.html" class="action-card">
+                <h3>Générer un rapport</h3>
+                <p>Exporter les données en PDF/Excel</p>
+            </a>
+        </div>
+
+        <div class="justifications-container">
+            <h2>Dernières justifications</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Étudiant</th>
+                        <th>Cours</th>
+                        <th>Date</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mohamed Ali (L2 Info)</td>
+                        <td>Algorithmique</td>
+                        <td>15/03/2025</td>
+                        <td><span class="status accepted">Acceptée</span></td>
+                        <td><button class="view-btn">Voir</button></td>
+                    </tr>
+                    <tr>
+                        <td>Samira Ben Ahmed (L2 Info)</td>
+                        <td>Base de Données</td>
+                        <td>16/03/2025</td>
+                        <td><span class="status pending">En attente</span></td>
+                        <td><button class="view-btn">Voir</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>JustifEdu - Système de Gestion des Justifications d'Absences</p>
+        <p>&copy; 2025 - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

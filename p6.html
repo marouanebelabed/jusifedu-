@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustifEdu - Tableau de Bord Étudiant</title>
+    <link rel="stylesheet" href="p6.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="user-info">
+            <div class="avatar">👨‍🎓</div>
+            <div>
+                <h2>Mohamed Ali</h2>
+                <p>Matricule: 20250001 | L2 Informatique</p>
+            </div>
+        </div>
+        <nav class="dashboard-nav">
+            <a href="p6.html" class="active">Mes Justifications</a>
+            <a href="p7.html">Nouvelle Justification</a>
+            <a href="#">Profil</a>
+            <a href="p3.html" class="logout">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="stats-cards">
+            <div class="stat-card">
+                <h3>Justifications soumises</h3>
+                <p class="stat-value">12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Justifications acceptées</h3>
+                <p class="stat-value">9</p>
+            </div>
+            <div class="stat-card">
+                <h3>En attente</h3>
+                <p class="stat-value">2</p>
+            </div>
+            <div class="stat-card">
+                <h3>Refusées</h3>
+                <p class="stat-value">1</p>
+            </div>
+        </div>
+
+        <div class="justifications-container">
+            <div class="section-header">
+                <h2>Mes justifications récentes</h2>
+                <a href="p7.html" class="new-btn">+ Nouvelle justification</a>
+            </div>
+
+            <div class="justifications-list">
+                <div class="justification-card accepted">
+                    <div class="justification-header">
+                        <h3>Absence en Algorithmique</h3>
+                        <span class="status-badge">Acceptée</span>
+                    </div>
+                    <p class="justification-date">15/03/2025 - 8h30-10h30</p>
+                    <p class="justification-reason">Maladie (avec certificat médical)</p>
+                    <div class="justification-footer">
+                        <span>Soumise le: 14/03/2025</span>
+                        <div class="actions">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="justification-card pending">
+                    <div class="justification-header">
+                        <h3>Absence en Base de Données</h3>
+                        <span class="status-badge">En attente</span>
+                    </div>
+                    <p class="justification-date">20/03/2025 - 14h00-16h00</p>
+                    <p class="justification-reason">Problème de transport</p>
+                    <div class="justification-footer">
+                        <span>Soumise le: 20/03/2025</span>
+                        <div class="actions">
+                            <button class="view-btn">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="justification-card rejected">
+                    <div class="justification-header">
+                        <h3>Absence en Mathématiques</h3>
+                        <span class="status-badge">Refusée</span>
+                    </div>
+                    <p class="justification-date">05/03/2025 - 10h45-12h45</p>
+                    <p class="justification-reason">Raison personnelle</p>
+                    <div class="justification-footer">
+                        <span>Soumise le: 04/03/2025</span>
+                        <div class="actions">
+                            <button class="view-btn">Voir détails</button>
+                            <button class="appeal-btn">Faire appel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>JustifEdu - Système de Gestion des Justifications d'Absences</p>
+        <p>&copy; 2025 - Tous droits réservés</p>
+    </footer>
+    <script src="p6.js"></script>
+
+</body>
+</html>

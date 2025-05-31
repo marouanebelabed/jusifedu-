@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustifEdu - Tableau de Bord Enseignant</title>
+    <link rel="stylesheet" href="p8.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="user-info">
+            <div class="avatar">👨‍🏫</div>
+            <div>
+                <h2>Prof. Ahmed Ben Salah</h2>
+                <p>Département: Informatique | Modules: Algorithmique, Base de Données</p>
+            </div>
+        </div>
+        <nav class="dashboard-nav">
+            <a href="#" class="active">Justifications à traiter</a>
+            <a href="#">Historique</a>
+            <a href="#">Profil</a>
+            <a href="#" class="logout">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="stats-cards">
+            <div class="stat-card">
+                <h3>Justifications en attente</h3>
+                <p class="stat-value">7</p>
+            </div>
+            <div class="stat-card">
+                <h3>Traitées cette semaine</h3>
+                <p class="stat-value">15</p>
+            </div>
+            <div class="stat-card">
+                <h3>Taux d'acceptation</h3>
+                <p class="stat-value">82%</p>
+            </div>
+        </div>
+
+        <div class="justifications-container">
+            <div class="section-header">
+                <h2>Justifications en attente de traitement</h2>
+                <div class="filters">
+                    <select id="course-filter">
+                        <option value="">Tous les cours</option>
+                        <option value="algo">Algorithmique</option>
+                        <option value="bd">Base de Données</option>
+                    </select>
+                    <select id="date-filter">
+                        <option value="">Toutes les dates</option>
+                        <option value="today">Aujourd'hui</option>
+                        <option value="week">Cette semaine</option>
+                        <option value="month">Ce mois</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="justifications-list">
+                <div class="justification-card">
+                    <div class="student-info">
+                        <div class="student-avatar">👩‍🎓</div>
+                        <div>
+                            <h3>Samira Ben Ahmed</h3>
+                            <p>L2 Info - Matricule: 20250012</p>
+                        </div>
+                    </div>
+                    <div class="justification-details">
+                        <p><strong>Cours:</strong> Algorithmique - 15/03/2025 (8h30-10h30)</p>
+                        <p><strong>Motif:</strong> Maladie (avec certificat médical)</p>
+                        <p><strong>Détails:</strong> Fièvre et maux de gorge, certificat joint</p>
+                    </div>
+                    <div class="justification-actions">
+                        <button class="accept-btn">Accepter</button>
+                        <button class="reject-btn">Refuser</button>
+                        <button class="view-btn">Voir détails</button>
+                    </div>
+                </div>
+
+                <div class="justification-card">
+                    <div class="student-info">
+                        <div class="student-avatar">👨‍🎓</div>
+                        <div>
+                            <h3>Karim Jlassi</h3>
+                            <p>L2 Info - Matricule: 20250008</p>
+                        </div>
+                    </div>
+                    <div class="justification-details">
+                        <p><strong>Cours:</strong> Base de Données - 16/03/2025 (14h00-16h00)</p>
+                        <p><strong>Motif:</strong> Problème de transport</p>
+                        <p><strong>Détails:</strong> Panne de bus, aucune pièce jointe</p>
+                    </div>
+                    <div class="justification-actions">
+                        <button class="accept-btn">Accepter</button>
+                        <button class="reject-btn">Refuser</button>
+                        <button class="view-btn">Voir détails</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>JustifEdu - Système de Gestion des Justifications d'Absences</p>
+        <p>&copy; 2025 - Tous droits réservés</p>
+    </footer>
+        <script src="p8.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustifEdu - Nouvelle Justification</title>
+    <link rel="stylesheet" href="p7.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="user-info">
+            <div class="avatar">👨‍🎓</div>
+            <div>
+                <h2>Mohamed Ali</h2>
+                <p>Matricule: 20250001 | L2 Informatique</p>
+            </div>
+        </div>
+        <nav class="dashboard-nav">
+            <a href="p6.html">Mes Justifications</a>
+            <a href="p7.html" class="active">Nouvelle Justification</a>
+            <a href="#">Profil</a>
+            <a href="p3.html" class="logout">Déconnexion</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="form-container">
+            <h1>Nouvelle justification d'absence</h1>
+            <p>Remplissez ce formulaire pour justifier votre absence à un cours.</p>
+            
+            <form id="justification-form">
+                <div class="form-group">
+                    <label for="course">Cours concerné</label>
+                    <select id="course" required>
+                        <option value="">-- Sélectionnez un cours --</option>
+                        <option value="algo">Algorithmique et Structures de Données</option>
+                        <option value="bd">Base de Données</option>
+                        <option value="web">Développement Web</option>
+                        <option value="reseaux">Réseaux Informatiques</option>
+                        <option value="math">Mathématiques Discrètes</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date d'absence</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Heure du cours</label>
+                        <select id="time" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="8h30-10h30">8h30 - 10h30</option>
+                            <option value="10h45-12h45">10h45 - 12h45</option>
+                            <option value="14h00-16h00">14h00 - 16h00</option>
+                            <option value="16h15-18h15">16h15 - 18h15</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reason">Motif de l'absence</label>
+                    <select id="reason" required>
+                        <option value="">-- Sélectionnez un motif --</option>
+                        <option value="maladie">Maladie (avec certificat médical)</option>
+                        <option value="maladie_sans_certif">Maladie (sans certificat médical)</option>
+                        <option value="transport">Problème de transport</option>
+                        <option value="familiale">Raison familiale importante</option>
+                        <option value="personnelle">Raison personnelle</option>
+                        <option value="autre">Autre raison</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="other-reason-group" style="display: none;">
+                    <label for="other-reason">Précisez la raison</label>
+                    <input type="text" id="other-reason">
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Détails supplémentaires (optionnel)</label>
+                    <textarea id="details" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="attachment">Pièce jointe (optionnel)</label>
+                    <input type="file" id="attachment">
+                    <small>Vous pouvez joindre un justificatif (certificat médical, autre document)</small>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Annuler</button>
+                    <button type="submit" class="submit-btn">Soumettre la justification</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>JustifEdu - Système de Gestion des Justifications d'Absences</p>
+        <p>&copy; 2025 - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        document.getElementById('reason').addEventListener('change', function() {
+            const otherReasonGroup = document.getElementById('other-reason-group');
+            if (this.value === 'autre') {
+                otherReasonGroup.style.display = 'block';
+            } else {
+                otherReasonGroup.style.display = 'none';
+            }
+        });
+    </script>
+        <script src="p7.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustifEdu - Authentification Enseignant</title>
+    <link rel="stylesheet" href="p4.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="header">
+                <h1>Espace Enseignant</h1>
+                <p>Connectez-vous pour gérer les justifications</p>
+            </div>
+            
+            <div class="form-container">
+                <div class="info-note">
+                    <strong>Information:</strong> Vos identifiants de connexion vous ont été fournis par l'administration. Si vous n'avez pas encore reçu vos identifiants, veuillez contacter le service administratif.
+                </div>
+                
+                <form action="enseignant-dashboard.html">
+                    <div class="form-group">
+                        <label class="form-label" for="login-id">Identifiant</label>
+                        <input class="form-input" type="text" id="login-id" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="login-password">Mot de passe</label>
+                        <input class="form-input" type="password" id="login-password" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Se connecter</button>
+                    
+                    <div class="form-footer">
+                        <p>Problème de connexion? <a href="#">Contacter l'administration</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <a href="p2.html" class="back-btn">Retour</a>
+    </div>
+    
+    <footer class="footer">
+        <p>JustifEdu - Système de Gestion des Justifications d'Absences</p>
+        <p>&copy; 2025 - Tous droits réservés</p>
+    </footer>
+        <script src="p4.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustifEdu - Authentification Administration</title>
+    <link rel="stylesheet" href="p5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="header">
+                <h1>Espace Administration</h1>
+                <p>Connectez-vous pour accéder au tableau de bord administratif</p>
+            </div>
+            
+            <div class="form-container">
+                <div class="security-note">
+                    <strong>Note de sécurité:</strong> Cette section est réservée uniquement au personnel administratif autorisé. Toute tentative d'accès non autorisé est enregistrée et peut faire l'objet de sanctions.
+                </div>
+                
+                <form action="admin-dashboard.html">
+                    <div class="form-group">
+                        <label class="form-label" for="admin-id">Identifiant administratif</label>
+                        <input class="form-input" type="text" id="admin-id" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="admin-password">Mot de passe</label>
+                        <input class="form-input" type="password" id="admin-password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="admin-code">Code de sécurité</label>
+                        <input class="form-input" type="password" id="admin-code" required>
+                        <small style="color: #666; font-size: 0.8rem;">Code à 6 chiffres fourni par le service informatique</small>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Se connecter</button>
+                    
+                    <div class="form-footer">
+                        <p>Problème d'accès? <a href="#">Contacter le support</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <a href="p2.html" class="back-btn">Retour</a>
+    </div>
+    
+    <footer class="footer">
+        <p>JustifEdu - Système de Gestion des Justifications d'Absences</p>
+        <p>&copy; 2025 - Tous droits réservés</p>
+    </footer>
+        <script src="p5.js"></script>
+
+</body>
+</html>
