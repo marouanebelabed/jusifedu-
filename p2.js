@@ -1,4 +1,4 @@
-// p2.js - Script pour la page de sélection de rôle (role-selection.html)
+// p2.js - Script pour la page de sélection de rôle
 
 document.addEventListener('DOMContentLoaded', () => {
     const roleCards = document.querySelectorAll('.role-card');
