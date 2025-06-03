@@ -1,4 +1,4 @@
-// p5.js - Script pour la page d'authentification Administration (p5.html)
+// p5.js - Script pour la page d'authentification Administration 
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Script p5.js chargé pour la page d'authentification Administration.");
