@@ -1,4 +1,4 @@
-// p3.js - Script pour la page d'authentification Étudiant (p3.html)
+// p3.js - Script pour la page d'authentification Étudiant
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Script p3.js chargé pour la page d'authentification Étudiant.");
