@@ -1,12 +1,9 @@
-// p5.js - Script pour la page d'authentification Administration 
+// p5.js - Script pour la page d'authentification Administration (p5.html)
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Script p5.js chargé pour la page d'authentification Administration.");
 
-    // Note: The original p5.html provided does not have tabs for login/register.
-    // If you add a registration form for admins later, you can uncomment and use
-    // the switchTab function and adjust form IDs accordingly.
-    /*
+    
     window.switchTab = function(tab) {
         const loginTab = document.getElementById('login-tab');
         const registerTab = document.getElementById('register-tab');
@@ -25,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loginFormContainer.style.display = 'none';
         }
     };
-    */
+    
 
     const loginForm = document.querySelector('.form-container form'); // Select the form within the form-container
     // const registerForm = document.getElementById('register-form') ? document.getElementById('register-form').querySelector('form') : null;
@@ -57,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Validation de la correspondance des mots de passe pour l'inscription (si un formulaire d'inscription est ajouté)
-        /*
+        
         if (form.id === 'register-form') {
             const password = document.getElementById('register-password');
             const confirmPassword = document.getElementById('register-confirm-password');
@@ -69,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Les mots de passe ne correspondent pas.');
             }
         }
-        */
+        
 
         // Validation spécifique pour le code de sécurité de l'administrateur
         const adminCodeInput = document.getElementById('admin-code');
@@ -96,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Écouteur d'événement pour la soumission du formulaire d'inscription (si un formulaire est ajouté)
-    /*
     if (registerForm) {
         registerForm.addEventListener('submit', function(event) {
             if (!validateForm(registerForm)) {
@@ -107,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    */
+    
 
     // --- Basculement de la visibilité du mot de passe ---
     function setupPasswordToggle(passwordInputId) {
@@ -146,8 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Appliquer le basculement de mot de passe aux champs concernés
     setupPasswordToggle('admin-password');
     setupPasswordToggle('admin-code'); // Appliquer aussi au code de sécurité
-    // setupPasswordToggle('register-password'); // Uncomment if registration form is added
-    // setupPasswordToggle('register-confirm-password'); // Uncomment if registration form is added
+     setupPasswordToggle('register-password'); // Uncomment if registration form is added
+    setupPasswordToggle('register-confirm-password'); // Uncomment if registration form is added
 
 
     // Fonction pour afficher une boîte de dialogue d'alerte personnalisée
